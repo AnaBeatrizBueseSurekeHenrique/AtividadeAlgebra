@@ -32,11 +32,18 @@ int main(){
             }
         }
     }
-     for(int i = 0; i < 3; i++){
-        for(int j = 0; j < 4; j++){
+    int j;
+    cout << "Matriz Final: " << endl;
+     for(int i = 0; i < coluna; i++){
+        for(j = 0; j < linha - 1; j++){
             cout << Ab[i][j] << " ";
         }
         cout << endl;
+    }
+    j = linha - 1;
+    cout << "Resultados finais: "  << endl;
+    for(int i = 0; i < coluna; i++){
+        cout << Ab[i][j] << endl;
     }
     return 0;
 }
